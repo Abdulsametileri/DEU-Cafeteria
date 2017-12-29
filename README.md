@@ -2,10 +2,14 @@
 Mutex and semaphore implementation on particular problem
 Scenario
 In DEU Cafeteria there is one cook during lunch times that put the food in the trays and puts the trays on the conveyor (a moving band that carries the filled trays out of the kitchen so students can fetch them and eat). Conveyor can take at most 8 trays. If the conveyor is full cook sleeps until a tray is fetched. Students come in random times and fetch their trays. If the there is no tray available they wait until cook fills a tray and puts it on the conveyor. For the sake of simplicity you don’t have to worry about the travel time of the tray on the conveyor.
+
 Requirements
 • Simulation has to start with a full conveyor. (With 8 trays ready to be fetched)
+
 • There is only ONE (1) cook. (This means you will need a thread for the cook)
+
 • If the conveyor is full cook sleeps, if not fills trays.
+
 • Filling a tray takes random amount of time between 2-5 seconds.
 • Each student has to be a different thread and has to be created at random times. (Creating constant amount of student threads prior to simulation is not ACCEPTED!!!)
 • A student comes to cafeteria in random intervals that changes between 1-4 seconds.
